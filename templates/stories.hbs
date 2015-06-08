@@ -1,0 +1,25 @@
+<h1><em>Bustle Clone</em></h1><br><br>
+<div class="row">
+
+{{#each model as |story|}}
+
+    <div class="col-md-3">
+      <h3 class="text-center">{{#link-to 'story' story.id}}{{story.title}}{{/link-to}}</h3>
+      <img {{bind-attr src=story.imageURL}}>
+    <!-- </div>
+  <div class="col-md-3">
+    <h3 class="text-center">{{#link-to 'story' story.id}}Bridges{{/link-to}}</h3>
+    <img src="./styles/pic.jpeg">
+  </div>
+  <div class="col-md-3">
+    <h3 class="text-center">{{#link-to 'story' story.id}}Fields{{/link-to}}</h3>
+    <img src="./styles/field.jpeg">
+  </div>
+  <div class="col-md-3">
+    <h3 class="text-center">{{#link-to 'story' story.id}}Animals{{/link-to}}</h3>
+    <img src="./styles/wolf.jpeg"> -->
+  </div>
+
+  {{/each}}
+
+</div>
